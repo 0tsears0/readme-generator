@@ -1,4 +1,3 @@
-
 const generateMarkdown = profileData => {
   return `
   
@@ -10,14 +9,12 @@ const generateMarkdown = profileData => {
   Phone ${profileData.phone}
 
   ### Tech
-  ${profileData.tech.map(techName => `- ${techName}`).join('\n')}
+  ${profileData.tech.map(techName => `- ${techName}`).join("\n")}
 
   ### Avatar
   
   
-  `
-}
-
-
+  `;
+};
 
 module.exports = generateMarkdown;
